@@ -554,6 +554,7 @@
         const camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2.5, 2, new BABYLON.Vector3(0, 0, 0));
         camera.useAutoRotationBehavior = true;
         camera.autoRotationBehavior.idleRotationSpeed = 0.5;
+        camera.attachControl(true);
         const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, -0.8, -1));
         const light2 = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 0.8, 1));
         light2.intensity = 0.5;
